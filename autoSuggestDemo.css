@@ -1,0 +1,181 @@
+body{
+	margin : 0;
+	padding: 0;
+	min-width: 320px;
+	font-family: sans-serif;
+	font-size: 1em;
+	background-color: #e6e6e6;
+}
+
+#container{
+	margin : 0 auto;
+	max-width: 500px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 1.5em;
+	font-family: Cambria, serif;
+	letter-spacing: 1px;
+	color: #A2A2A2;
+	text-shadow: 0 -1px 0 #242424, 0 1px 1px #fff;
+}
+
+#commentBoxHolder{
+	position: relative;
+}
+
+#pseudoCommentBox{
+	position:absolute;
+	top:0;
+	left:0;	
+	display: block;
+	font-family: Tahoma,sans-serif;
+	font-size: 0.85em;
+	height: 5em;
+	padding: 0.2em 1%;
+	width: 98%;
+	outline: none;
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #fff;
+	color : #fff;
+	z-index: 2;
+	background-color: #fff;
+}
+
+#pseudoCommentBox a{
+	background-color : #9C93F3;
+	color : #fff;
+	text-decoration: none;
+}
+
+#commentBox{
+	position:relative;
+	z-index:3;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+	background-color:transparent;
+	background-color : rgba(0,0,0,0);
+	display: block;
+	font-family: Tahoma,sans-serif;
+	font-size: 0.85em;
+	height: 5em;
+	padding: 0.2em 1%;
+	resize: none;
+	width: 98%;
+	outline: none;
+	border-style: solid;
+	border-width: 1px 0;
+	border-color : #ccc;
+}
+
+#commentBox:focus{
+	outline: none;
+	border-style: solid;
+	border-width: 1px 0;
+	border-color : #ccc;
+}
+
+#userSuggestionList{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width : 100%;
+	display :block;
+	box-shadow: 0 2px 5px #CCC;
+	-webkit-box-shadow:0 5px 10px #CCC;
+	-moz-box-shadow:0 5px 10px #CCC;
+}
+
+.suggestionEntry{
+	 background-color: #fff;
+    color: #344e84;
+    font-family: tahoma,sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(233, 233, 233, 1);
+}
+
+.suggestionEntry:hover{
+	 background-color: #344e84;
+    color: #fff;
+}
+
+#postButtonHolder{
+	text-align: right;
+	margin: 5px 0 1em;
+}
+
+#postButton{
+	display: inline-block;
+    font-size: 0.85em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border: 1px solid #CCC;
+    background: -webkit-linear-gradient(180deg, #E6E6E6 5%, #FFFFFF 95%);
+    background: -o-linear-gradient(180deg, #E6E6E6 5%, #FFFFFF 95%);
+    background: -moz-linear-gradient(180deg, #E6E6E6 5%, #FFFFFF 95%);
+    background: linear-gradient(180deg, #E6E6E6 5%, #FFFFFF 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E6E6', endColorstr='#FFFFFF');
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+#postButton:hover
+{
+	background: -webkit-linear-gradient(180deg, #E6E6E6 5%, #E6E6E6 95%);
+    background: -o-linear-gradient(180deg, #E6E6E6 5%, #E6E6E6 95%);
+    background: -moz-linear-gradient(180deg, #E6E6E6 5%, #E6E6E6 95%);
+    background: linear-gradient(180deg, #E6E6E6 5%, #E6E6E6 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E6E6', endColorstr='#E6E6E6');
+}
+#postButton:active
+{
+	background: -webkit-linear-gradient(180deg, #D6D6D6 5%, #E6E6E6 95%);
+    background: -o-linear-gradient(180deg, #D6D6D6 5%, #E6E6E6 95%);
+    background: -moz-linear-gradient(180deg, #D6D6D6 5%, #E6E6E6 95%);
+    background: linear-gradient(180deg, #D6D6D6 5%, #E6E6E6 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D6D6D6', endColorstr='#E6E6E6');
+}
+
+.comment{
+	padding: 1em;
+	font-family: Tahoma,sans-serif;
+	background-color: #ffffff;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+	border: 1px solid #DDD;
+	color: #333;
+	line-height: 1.8em;
+}
+.comment a{
+	color: #00588A;
+	text-decoration: none;
+}
+.comment a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+.comment a:active
+{
+	color: #D22000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

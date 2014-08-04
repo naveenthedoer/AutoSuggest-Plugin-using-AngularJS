@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl" ng-init="master">
+    <head>
+        <title>AutoSuggest Plugin Demo</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="autoSuggestDemo.css"/>
+        <script src="angular.min.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>AutoSuggestion Plugin Demonstration</h1>
+            <div id="commentBoxHolder">
+                <div id="pseudoCommentBox"></div>
+                <textarea id="commentBox" ng-keyup="change($event)" ng-model="textModel" ng-click="cursorLocation($event)" placeholder="Type any thing"></textarea>
+                <div id="userSuggestionList">
+                    <div class="suggestionEntry" ng-model="results" ng-repeat="result in results" data={{result}} ng-click="addUserLink(result.name, result.link)">
+                    {{result.name}}
+                    </div>
+                </div>
+            </div>
+                <div id="postButtonHolder">
+                    <div id="postButton" ng-click="postComment()">Post</div>
+                </div>
+                <div id="commentsContainer">
+                    <div class="comment">
+                        This is an autoSuggest Javascript Plugin for usernames and linking them to their corresponding links using AngularJS.
+                    </div>
+                </div>
+        </div>
+        <script src="suggest.js"></script>
+    </body>
+
+</html>
